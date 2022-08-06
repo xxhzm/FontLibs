@@ -7,7 +7,15 @@ class FontLibs_Head
     // 插件所在位置的路径信息
     $PluginPath = Helper::options()->pluginUrl . '/FontLibs/static/';
 
-    $path = Typecho_Widget::widget('Widget_Options')->plugin('FontLibs')->SetCdn;;
+    // 判断是否开启了自定义字体
+    $Customize = Typecho_Widget::widget('Widget_Options')->plugin('FontLibs')->Customize;
+
+    if ($Customize !== '') {
+      echo "<script src='$PluginPath/css/css.php?Customize=$Customize'></script>";
+      return false;
+    }
+
+    $path = Typecho_Widget::widget('Widget_Options')->plugin('FontLibs')->SetCdn;
     // 获取配置信息
     $type = Typecho_Widget::widget('Widget_Options')->plugin('FontLibs')->SetFont;
 

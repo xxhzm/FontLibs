@@ -9,7 +9,7 @@ include('inc/header.php');
  *
  * @package FontLibs
  * @author  小小孩子们
- * @version 1.0.0
+ * @version 1.0.1
  * @link https://www.xxhzm.cn/archives/724/
  */
 class FontLibs_Plugin implements Typecho_Plugin_Interface
@@ -31,8 +31,11 @@ class FontLibs_Plugin implements Typecho_Plugin_Interface
     // 字体设置
     $form->addInput(FontLibs_Form::SetFont());
 
-    // CDN地址
+    // 设置字体加载地址
     $form->addInput(FontLibs_Form::SetCdn());
+
+    // 自定义字体加载
+    $form->addInput(FontLibs_Form::Customize());
   }
 
   public static function personalConfig(Typecho_Widget_Helper_Form $form)
