@@ -10,5 +10,12 @@
 
 1.0.0内总含有8个字体供选择
 
-下载使用说明：https://www.xxhzm.cn/archives/724/
+博客：https://www.xxhzm.cn/archives/724/
 
+# 更新
+
+**1.0.1**
+
+增加了4个内置字体
+
+增加了自定义加载字体
