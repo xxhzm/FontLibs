@@ -13,5 +13,5 @@ if ($Customize !== '') {
 }
 
 // 输出css
-$style = "<style> @font-face {font-family: 'font_css';font-style: normal;font-weight: 400;font-display: swap;src: url('$fileName');}* {font-family: 'font_css' !important;}</style>";
+$style = "<style> @font-face {font-family: 'font_css';font-style: normal;font-weight: 400;font-display: swap;src: url('$fileName');}body {font-family: 'font_css' !important;}</style>";
 echo "document.write(\"$style\")";

@@ -9,7 +9,7 @@ include('inc/header.php');
  *
  * @package FontLibs
  * @author  小小孩子们
- * @version 1.0.2
+ * @version 1.0.3
  * @link https://www.xxhzm.cn/archives/724/
  */
 class FontLibs_Plugin implements Typecho_Plugin_Interface
